@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+                display: flex;
+                background-color: palevioletred;
+                justify-content: center;
+               align-items: center;
+               height: 100vh;
+               flex-direction: column;        
+        }
+        #hours,#minutes,#seconds,p{
+            font-size: 90px;
+        }
+        .btn{
+            background-color: bisque;
+            font-size: 40px;
+        }
+        .btn:hover{
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 style="font-size: 60px;">Stopwatch</h1>
+        
+        
+        <p><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>
+        
+        <div>
+        <button class="btn" onclick="start()">Start</button>
+        <button class="btn" onclick="pause()">Pause</button>
+        <button class="btn" onclick="reset()">Reset</button>
+        <button class="btn" onclick="reverse()">Reverse</button>
+    </div>
+        
+        </div> 
+        
+        
+        
+        
+      <script src="index.js"></script>  
+        
+        
+        
+        
+</body>
+</html>
